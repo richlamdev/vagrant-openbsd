@@ -15,13 +15,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |openbsdconfig|
   openbsdconfig.vm.define "japan" do |japan|
     japan.vm.box = "generic/openbsd7"
     japan.vm.hostname = "japan.test"
-    japan.vm.network :public_network, bridge: "enp9s0", ip: "192.168.1.201"
+    japan.vm.network :public_network, bridge: "enp9s0", ip: "192.168.150.201"
   end
 
   openbsdconfig.vm.define "india" do |india|
     india.vm.box = "generic/openbsd7"
     india.vm.hostname = "india.test"
-    india.vm.network :public_network, bridge: "enp9s0", ip: "192.168.1.202"
+    india.vm.network :public_network, bridge: "enp9s0", ip: "192.168.150.202"
   end
 
 end
